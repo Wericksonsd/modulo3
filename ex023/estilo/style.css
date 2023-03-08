@@ -9,6 +9,18 @@ h1{
 table{
     width: 500px;
     border-collapse: collapse;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+caption{
+    font-size: 1.5em;
+    color: #131313;
+    background-color: #c0c0c0;
+    padding: 8px;
+}
+
+tbody tr:nth-child(odd){
+    background-color: #dbdbdb;
 }
 
 thead, tfoot{
@@ -19,4 +31,8 @@ thead, tfoot{
 td, th{
     border: 2px solid black;
     padding: 10px;
+}
+
+.num{
+    text-align: right;
 }
