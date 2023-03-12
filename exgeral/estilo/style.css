@@ -14,17 +14,22 @@
     --fontnormal: 'Raleway', sans-serif;
     --fonttit: 'Oswald', sans-serif;
     --fonttext2: 'Genos', sans-serif;
+    --cor0: rgb(14, 19,23);
+    --cor1: rgb(30, 40, 42);
+    --cor2: rgb(0, 0, 0);
+    --cor4: rgb(207, 189, 185);
+    --cor5: rgb(255, 255, 255);
 }
 
 body{
-    background: aqua;
+    background: rgb(170, 170, 170);
 }
 
 header{
     position: sticky;
-    padding: 30px;
-    background-color: #131313;
-    color: aliceblue;
+    padding-top: 30px;
+    background-color: var(--cor0);
+    color: var(--cor5);
 }
 
 header h1{
@@ -32,27 +37,46 @@ header h1{
     text-align: center;
     font-size: 5em;
     font-variant: small-caps;
+    text-shadow: 2px 2px 15px var(--cor4);
 }
 
 header p{
     text-align: center;
 }
 
-header li{
-    display: inline;
-    padding: 15px;
+header menu{
+    display: none;
 }
 
+#menubar{
+    padding: 5px;
+    background-color: var(--cor2);
+    color: var(--cor4);
+    display: block;
+    margin: 10px -30px 0 -30px;
+    text-align: center;
+}
+
+#menubar:hover{
+    cursor: pointer;
+    background-color: var(--cor4);
+    color: var(--cor1);
+}
+
+
 header a{
+    display: block;
+    border-top: 2px solid var(--cor4);
     text-decoration: none;
-    color: aliceblue;
+    color: var(--cor5);
+    text-align: center;
     padding: 5px;
     border-radius: 3px;
 }
 
 header a:hover{
-    background-color: aliceblue;
-    color: #131313;
+    background-color: var(--cor5);
+    color: var(--cor1);
 }
 
 main{
@@ -64,8 +88,8 @@ main{
 
 #tags{
     padding: 15px;
-    margin: 0 -10px;
-    background-color: #131313;
+    margin: -25px -10px 0 -10px;
+    background-color: #131313ee;
     color: aliceblue;
     line-height: 2em;
 }
