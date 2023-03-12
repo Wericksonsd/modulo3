@@ -22,7 +22,9 @@
 }
 
 body{
-    background: rgb(170, 170, 170);
+    background: var(--cor4) url("../imgs/Menu_Theme_Classic_Current.webp") center center no-repeat ;
+    background-size: contain;
+    background-attachment: scroll;
 }
 
 header{
