@@ -4,12 +4,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Genos:ital,wght@0,100;0,200;0,400;0,600;0,900;1,100;1,200;1,400;1,600;1,900&display=swap');
 
-*{
-    margin: 0;
-    padding: 0;
-    font-family: var(--fontnormal);
-}
-
 :root{
     --fontnormal: 'Raleway', sans-serif;
     --fonttit: 'Oswald', sans-serif;
@@ -19,12 +13,29 @@
     --cor2: rgb(0, 0, 0);
     --cor4: rgb(207, 189, 185);
     --cor5: rgb(255, 255, 255);
+
+    /*FORGOTTEN CROSSROADS*/
+
+    --fc0: rgb(8, 11, 18);
+    --fc1: rgb(29, 41, 81);
+    --fc2: rgb(69, 86, 130);
+    --fc3: rgb(141, 175, 212);
+    --fc4: rgb(255, 255, 150);
+    --fc5: rgb(246, 206, 131);
+    --fc6: rgb(236, 129, 115);
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: var(--fontnormal);
 }
 
 body{
+    height: 98vh;
     background: var(--cor4) url("../imgs/Menu_Theme_Classic_Current.webp") center center no-repeat ;
-    background-size: contain;
-    background-attachment: scroll;
+    background-size: cover;
 }
 
 header{
@@ -83,21 +94,37 @@ header a:hover{
 
 main{
     max-width: 1000px;
-    background-color: rgb(191, 223, 252);
+    background-color: var(--cor2);
     padding: 25px 10px;
     margin: auto;
 }
 
+h2{
+    text-align: center;
+    text-decoration: underline;
+}
+
 #tags{
     padding: 15px;
-    margin: -25px -10px 0 -10px;
-    background-color: #131313ee;
+    margin: -25px -10px 0 -10px;    
+    background: url("../imgs/forgotten-crossroads.png") center center no-repeat scroll;
+    background-size: cover;
     color: aliceblue;
     line-height: 2em;
 }
 
+#tags h3{
+    padding: 5px;
+    padding-left: 20px;
+    width: 100px;
+    border-radius: 0 5px 5px 0;
+    margin-left: -15px;
+    background-color: var(--fc1);
+}
+
 #tags p {
     text-align: justify;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.479);
 }
 
 .negr{
