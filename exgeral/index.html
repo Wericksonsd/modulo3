@@ -19,7 +19,7 @@
         <menu id="itens">
             <ul>
                 <li><a href="#tags">Tags</a></li>
-                <li><a href="#">Imagem Fundo</a></li>
+                <li><a href="#imgfun">Imagem Fundo</a></li>
                 <li><a href="#">Tabelas</a></li>
                 <li><a href="#">Botões</a></li>
                 <li><a href="#">Formulários</a></li>
@@ -32,25 +32,51 @@
             <h2>Tags</h2>
             <div>
                 <h3>Texto</h3>
-                <p><span class="negr">Tags de Título</span> podendo ser de &lsaquo;h1&rsaquo; a &lsaquo;h6&rsaquo; possuem 6 níveis</p>
-                <p><span class="negr">Tags de Estilos</span> para textos, como &lsaquo;strong&rsaquo; para <strong>negrito</strong> e &lsaquo;em&rsaquo; para <em>itálico</em>, porém é recomendado utilizar o CSS, como por exemplo, deixar a fonte <span class="negr">negritada</span> com "font-weitgh: bold" ou <span class="itlc">itálico</span> com "font-style: italic". Também é possível deixar o texto <span class="subl">sublinhado</span> com "text-decoration: underline".</p>
+                <p><span class="negr">Tags de Título</span> podendo ser de <span class="code">&lsaquo;h1&rsaquo;</span> a <span class="code">&lsaquo;h6&rsaquo;</span> possuem 6 níveis</p>
+                <p><span class="negr">Tags de Estilos</span> para textos, como <span class="code">&lsaquo;strong&rsaquo;</span> para <strong>negrito</strong> e <span class="code">&lsaquo;em&rsaquo;</span> para <em>itálico</em>, porém é recomendado utilizar o CSS, como por exemplo, deixar a fonte <span class="negr">negritada</span> com "font-weitgh: bold" ou <span class="itlc">itálico</span> com "font-style: italic". Também é possível deixar o texto <span class="subl">sublinhado</span> com "text-decoration: underline".</p>
                 <p>Existem várias outras tags, como:</p>
-                <p><span class="itemt">&lsaquo;abbr&rsaquo;:</span> Da um <abbr title="oooh oooh oooh aah aah">significado</abbr> ao texto ao deixar o cursor na palavra.</p>
-                <p><span class="negr">Tag de Pre-formatação</span> é a tag &lsaquo;pre&rsaquo; que premite deixar o texto preformatado, como exemplo para códigos, junto ao &lsaquo;code&rsaquo; que substitui a fonte para uma mais legível:</p>
-                <p><pre><code>
-                    int main(){
+                <p><span class="negr">Significado:</span> com o código <span class="code">&lsaquo;abbr&rsaquo;</span> da um <abbr title="oooh oooh oooh aah aah">significado</abbr> ao texto ao deixar o cursor na palavra.</p>
 
-                        printf("Hello World!");
+                <p><span class="negr">Tag de Pre-formatação</span> é a tag &lsaquo;pre&rsaquo; que premite deixar o texto preformatado, como exemplo para códigos, junto ao <span class="code">&lsaquo;code&rsaquo;</span> que substitui a fonte para uma mais legível:</p>
+                <fieldset class="fieldsetcdg">
+                    <legend>CÓDIGO EXEMPLO</legend>
+                    <p><pre><code>
+                        int main(){
+                            printf("Hello World!");
+                            return 0;
+                        }
+                    </code></pre></p>
+                </fieldset>
 
-                        return 0;
-                    }
-                </code></pre></p>
+                <h3>Listas</h3>
+                <p><span class="negr">Tags para listas:</span> existem dois tipos de lista, as enumeradas e as comuns.</p>
+                <p>Enumeradas utilizam a tag <span class="code">&lsaquo;ol&rsaquo;</span> e seus itens <span class="code">&lsaquo;li&rsaquo;</span>.</p>
+                    <fieldset class="fieldsetcdg">
+                        <ol class="listex">Lista enumerada
+                            <li>Item 1</li>
+                            <li>Item 2</li>
+                            <li>Item 3</li>
+                        </ol>
+                    </fieldset>
                 <br>
+                <p>listas comuns utilizam <span class="code">&lsaquo;ul&rsaquo;</span> e também para seus items,<span class="code">&lsaquo;li&rsaquo;</span>.</p>
+                    <fieldset class="fieldsetcdg">
+                        <ul class="listex">Lista normal
+                            <li>Item 1</li>
+                            <li>Item 2</li>
+                            <li>Item 3</li>
+                        </ul>
+                    </fieldset>
+
                 <p><span class="negr">Tags Estruturais</span> são tags que contribuem com a estruturação da página.</p>
                 <p>&lsaquo;header&rsaquo;: define um cabeçalho</p>
                 <p>&lsaquo;main&rsaquo;: página principal</p>
                 <p>&lsaquo;h1&rsaquo;</p>
             </div>
+        </section>
+
+        <section id="imgfun">
+
         </section>
     </main>
     <script>
