@@ -73,3 +73,15 @@ main{
 #tags p {
     text-align: justify;
 }
+
+.negr{
+    font-weight: bolder;
+}
+
+.itlc{
+    font-style: italic;
+}
+
+.subl{
+    text-decoration: underline;
+}
